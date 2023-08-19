@@ -15,6 +15,7 @@ JavaScript: Used to enhance user interactivity and provide dynamic features on t
 Bootstrap: A front-end framework utilized to ensure responsive design, consistent styling, and efficient layout components.
 jQuery: A JavaScript library that simplifies client-side scripting and enables smoother interaction with the website's elements.
 
-Developed and Designed By Nizam Ul DIn
 License:
-The PlotPrime website is released under a free-to-use license and doesn't have a license. It means that users are granted the freedom to use, modify, and distribute the project without any restrictive licensing terms.  */
+The PlotPrime website is released under a free-to-use license and doesn't have a license. It means that users are granted the freedom to use, modify, and distribute the project without any restrictive licensing terms. 
+
+Demo:https://nizamdin.github.io/PlotPrime/
