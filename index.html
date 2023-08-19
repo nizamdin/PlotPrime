@@ -1,0 +1,835 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>PlotPrime-Real-State-Agency-Website</title>
+
+    <!-- Bootstrap  CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animatation.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="category.html">Category</a></li>
+              <li><a href="property-listings">Property</a></li>
+              <li><a href="contact.html">Contact Us</a></li> 
+              <li><div class="main-white-button"><a href="#"><i class="fa fa-plus"></i> Add Your Property</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--  Header Area End  -->
+
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="top-text header-text">
+
+            <h2>Find Nearby Places</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <form id="search-form" name="gs" method="submit" role="search" action="#">
+            <div class="row">
+              <div class="col-lg-3 align-self-center">
+                  <fieldset>
+                      <select name="country" class="form-select" aria-label="country" id="chooseCategory" onchange="this.form.click()">
+                            <option>Select country</option>
+                            <option value="AF">Afghanistan</option>
+                            <option value="AX">Aland Islands</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antarctica</option>
+                            <option value="AG">Antigua and Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="BA">Bosnia and Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BV">Bouvet Island</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="BN">Brunei Darussalam</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="CV">Cape Verde</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, Democratic Republic of the Congo</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CI">Cote D'Ivoire</option>
+                            <option value="HR">Croatia</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CW">Curacao</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands (Malvinas)</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GG">Guernsey</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-Bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HM">Heard Island and Mcdonald Islands</option>
+                            <option value="VA">Holy See (Vatican City State)</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran, Islamic Republic of</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IM">Isle of Man</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JE">Jersey</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KP">Korea, Democratic People's Republic of</option>
+                            <option value="KR">Korea, Republic of</option>
+                            <option value="XK">Kosovo</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Lao People's Democratic Republic</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libyan Arab Jamahiriya</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MO">Macao</option>
+                            <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MV">Maldives</option>
+                            <option value="ML">Mali</option>
+                            <option value="MT">Malta</option>
+                            <option value="MH">Marshall Islands</option>
+                            <option value="MQ">Martinique</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="MU">Mauritius</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">Mexico</option>
+                            <option value="FM">Micronesia, Federated States of</option>
+                            <option value="MD">Moldova, Republic of</option>
+                            <option value="MC">Monaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="ME">Montenegro</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MA">Morocco</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="MM">Myanmar</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="AN">Netherlands Antilles</option>
+                            <option value="NC">New Caledonia</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Niger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk Island</option>
+                            <option value="MP">Northern Mariana Islands</option>
+                            <option value="NO">Norway</option>
+                            <option value="OM">Oman</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PW">Palau</option>
+                            <option value="PS">Palestinian Territory, Occupied</option>
+                            <option value="PA">Panama</option>
+                            <option value="PG">Papua New Guinea</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PN">Pitcairn</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RE">Reunion</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russian Federation</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="BL">Saint Barthelemy</option>
+                            <option value="SH">Saint Helena</option>
+                            <option value="KN">Saint Kitts and Nevis</option>
+                            <option value="LC">Saint Lucia</option>
+                            <option value="MF">Saint Martin</option>
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                            <option value="VC">Saint Vincent and the Grenadines</option>
+                            <option value="WS">Samoa</option>
+                            <option value="SM">San Marino</option>
+                            <option value="ST">Sao Tome and Principe</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="SN">Senegal</option>
+                            <option value="RS">Serbia</option>
+                            <option value="CS">Serbia and Montenegro</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leone</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SX">Sint Maarten</option>
+                            <option value="SK">Slovakia</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="SB">Solomon Islands</option>
+                            <option value="SO">Somalia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                            <option value="SS">South Sudan</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="SD">Sudan</option>
+                            <option value="SR">Suriname</option>
+                            <option value="SJ">Svalbard and Jan Mayen</option>
+                            <option value="SZ">Swaziland</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="SY">Syrian Arab Republic</option>
+                            <option value="TW">Taiwan, Province of China</option>
+                            <option value="TJ">Tajikistan</option>
+                            <option value="TZ">Tanzania, United Republic of</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TL">Timor-Leste</option>
+                            <option value="TG">Togo</option>
+                            <option value="TK">Tokelau</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad and Tobago</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey</option>
+                            <option value="TM">Turkmenistan</option>
+                            <option value="TC">Turks and Caicos Islands</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="UM">United States Minor Outlying Islands</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="VN">Viet Nam</option>
+                            <option value="VG">Virgin Islands, British</option>
+                            <option value="VI">Virgin Islands, U.s.</option>
+                            <option value="WF">Wallis and Futuna</option>
+                            <option value="EH">Western Sahara</option>
+                            <option value="YE">Yemen</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabwe</option>
+                        </select>
+                  </fieldset>
+              </div>
+              <div class="col-lg-3 align-self-center">
+                  <fieldset>
+                      <input type="address" name="address" class="searchText" placeholder="Enter a location" autocomplete="on" required>
+                  </fieldset>
+              </div>
+              <div class="col-lg-3 align-self-center">
+                  <fieldset>
+                      <select name="price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
+                          <option selected>Price Range</option>
+                          <option value="$100 - $250">$400 - $800</option>
+                          <option value="$250 - $500">$800 - $1200</option>
+                          <option value="$500 - $1000">$12,00 - $24,00</option>
+                          <option value="$1000+">$24,00 or more</option>
+                      </select>
+                  </fieldset>
+              </div>
+              <div class="col-lg-3">                        
+                  <fieldset>
+                      <button class="main-button"><i class="fa fa-search"></i> Search Now</button>
+                  </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <ul class="categories">
+            <li><a href="category.html"><span class="icon"><img src="./assets/images/House.png" alt="House For Sell"></span> House For Sell</a></li>
+            <li><a href="property-listings.html"><span class="icon"><img src="assets/images/plot.png" alt="Plot For Sell"></span>Plot For Sell</a></li>
+            <li><a href="#"><span class="icon"><img src="assets/images/Flat.png" alt="Flat For Sell"></span> Flat For Sell</a></li>
+            <li><a href="#"><span class="icon"><img src="assets/images/Office.png" alt="Office For Sell"></span>Office For Sell</a></li>
+            <li><a href="#"><span class="icon"><img src="assets/images/Shop.png" alt="Shop For Sell"></span>Shop For Sell</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popular-categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Popular Categories</h2>
+            <h6>Check Them Out</h6>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><img src="assets/images/House.png" alt=""></span>
+                        House For Sell
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/plot.png" alt=""></span>
+                        Plot For Sell
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/Flat.png" alt=""></span>
+                        Flat For Sell
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/Office.png" alt=""></span>
+                       Office For Sell
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/Shop.png" alt=""></span>
+                        Shop For Sell
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-9 align-self-center">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>House Lorem ipsum dolor sit amet.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore pariatur cupiditate veritatis autem et itaque possimus sint dolor ab. Expedita a incidunt eveniet officiis pariatur nostrum in cum illum quibusdam vel debitis doloribus eligendi deleniti maiores doloremque ipsa laudantium velit mollitia enim ad itaque, consectetur at officia? Beatae, tenetur blanditiis.</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Discover More</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/Popular Categories/House.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Land Plot Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident quis esse numquam? Fuga doloribus aperiam optio dignissimos illum ut exercitationem ipsam minima, itaque unde illo pariatur blanditiis praesentium magnam veniam quod dolor iusto dolorem, natus architecto! Natus architecto ducimus consectetur eius sequi, quis quos suscipit nostrum nobis accusantium praesentium dolore.</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Explore More</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/Popular Categories/Plot.jpg" alt="Foods on the table">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Bluding Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat est esse tenetur veniam, deserunt eveniet maxime ullam, nesciunt qui quod placeat quos labore aperiam velit ut accusamus similique impedit nemo unde consequuntur? Ratione, eum. Dolor suscipit dolorum perferendis architecto consequatur asperiores velit! Accusantium quas fugiat odit beatae aspernatur eius?</p>
+                                <div class="main-white-button"><a href="property-listings.html"><i class="fa fa-eye"></i> More Property</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/Popular Categories/Bulding.jpg" alt="cars in the city">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Office Images from Unsplash</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, odio exercitationem nobis suscipit impedit id repellendus natus sunt magnam eos autem, corrupti nostrum animi illum amet sit tenetur hic! Culpa amet fugit odio illum ipsam illo maxime inventore aut. Reprehenderit nihil doloribus, libero quibusdam modi repellendus nemo accusamus obcaecati tempore?</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Discover More</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/Popular Categories/Office.jpg" alt="Shopping Girl">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Shop Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus architecto et beatae repudiandae tenetur ipsum, quaerat neque, velit eligendi deserunt reprehenderit expedita minima praesentium omnis recusandae a sequi. Quis excepturi sequi, eius aliquid voluptatum quia minus quasi velit? Animi laudantium possimus expedita incidunt quibusdam, officiis doloremque qui vero sint.</p>
+                                <div class="main-white-button"><a rel="nofollow" href="#"><i class="fa fa-eye"></i> Read More</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/Popular Categories/Shop.jpg" alt="Traveling Beach">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recent-listing-property">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Recent Listing Property</h2>
+            <h6>Check Them Out</h6>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-listing">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/House/House 1.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>1. Lorem ipsum dolor sit.</h4></a>
+                      <h6>by: Real State Agency</h6>
+                  
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $80000</span>
+                  
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 3600 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 6 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 6 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/House/House 2.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>2. Lorem ipsum dolor sit amet.</h4></a>
+                      <h6>by: Real State Agency</h6>
+                    
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $78000</span>
+                      
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 3450 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 4 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 4 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/House/House 3.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>3. Lorem ipsum dolor sit.</h4></a>
+                      <h6>by: Best Property</h6>
+                      
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $65000</span>
+            
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 4000 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 5 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 3 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/Flat/Bulding 1.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>4. Lorem ipsum dolor sit amet.</h4></a>
+                      <h6>by: Real State Agency</h6>
+                    
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $87000</span>
+               
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 3800 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 5 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 4 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/Flat/Bulding 2.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>5. Lorem ipsum dolor sit.</h4></a>
+                      <h6>by: Real State Agency</h6>
+                    
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $67000</span>
+                      
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 1700 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 5 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 3 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/Flat/Bulding 3.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>6. Lorem ipsum dolor sit.</h4></a>
+                      <h6>by: Real State Agency</h6>
+                    
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $95000</span>
+          
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 3800 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 6 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 4 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/Office/Office 1.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>7. Lorem ipsum dolor sit.</h4></a>
+                      <h6>by: Real State Agency</h6>
+                     
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $60000</span>
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 1840 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 8 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 5 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/Office/Office 2.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>8. Lorem ipsum dolor sit amet.</h4></a>
+                      <h6>by: Real State Agency</h6>
+                      
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $76000</span>
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 2000 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 5 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 5 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img src="assets/images/Listings Property/Plot/Plot 1.jpg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>9. Lorem ipsum dolor sit.</h4></a>
+                      <h6>by: Real State Agency</h6>
+                    
+                      <span class="price"><div class="icon"><img src="assets/images/listing-icon-01.png" alt=""></div> $45000</span>
+                      
+                      <ul class="info">
+                        <li><img src="assets/images/size.png" alt=""> 3000 sq ft</li>
+                        <li><img src="assets/images/listing-icon-02.png" alt=""> 6 Bedrooms</li>
+                        <li><img src="assets/images/listing-icon-03.png" alt=""> 5 Bathrooms</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="contact.html"><i class="fa fa-eye"></i> Contact Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- footer -->
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="about">
+            <div class="logo">
+              <img src="assets/images/black-logo.png" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia qui hic aliquam consequuntur placeat explicabo necessitatibus delectus nam asperiores.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="helpful-links">
+            <h4>Links</h4>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><a href="#">Categories</a></li>
+               
+                  <li><a href="#">Property</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                 
+                  <li><a href="#">Useful Sites</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-us">
+            <h4>Contact Us</h4>
+            <p>04 Street of New Town, United ,State</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <a href="#">00-1234-789</a>
+              </div>
+              <div class="col-lg-6">
+                <a href="#">012-3456-789</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="sub-footer">
+            <p>Copyright © 2023 PlotPrime Ltd. All Rights Reserved.
+            <br>
+			Design: <a rel="nofollow" href="#" title="Nizam Ul Din">Nizam Ul Din</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
